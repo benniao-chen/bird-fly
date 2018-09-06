@@ -1,0 +1,144 @@
+* {
+    font-size: 2rem;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.box-sizing {
+    padding: 10px;
+    width: 100px;
+    background: pink;
+}
+
+.margin-class {
+    margin-bottom: 10px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.div-test {
+    background-color: red;
+}
+
+.span-test {
+    background-color: black;    
+}
+
+.float-left {
+    float: left;
+    width: 50%;
+    background-color: red;
+}
+
+.float-right {
+    float: right;
+    width: 50%;
+    background-color: black;
+}
+
+.clearFix::after {
+    display: block;
+    content: ' ';
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.center-parent {
+    height: 500px;
+    background: blue;
+}
+
+.center {
+    height: 100px;
+    width: 200px;
+    background: yellow;
+}
+.center {
+    margin: 0 auto;
+} 
+
+/* .center-parent {
+    position: relative;
+}  */
+
+/* .center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+} */
+
+/* .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}  */
+
+/* .center-parent {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 1000px;
+}
+
+.center {
+    width: 50%;
+} */
+
+.z-index-1, .z-index-2, .z-index-3{
+    width:200px;
+    height:200px;
+    position: relative;
+}
+.z-index-1{
+    background:blue;
+}
+.z-index-1-1 {
+    width:100px;
+    height:100px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.z-index-2{
+    background:green;
+    margin-top:-100px;
+    margin-left:50px;
+}
+.z-index-3{
+    background:red;
+    margin-top:-100px;
+    margin-left:100px;
+}
+
+.container-wrap {
+    min-height: 200px;
+    background: #000;
+    overflow: hidden;
+    margin: 0 auto;
+    float: none;
+    display: table;
+}
+.left-container {
+    background: blue;
+    float: none;
+    display: table-cell;
+}
+
+.right-container {
+    background: green;
+    float: none;
+    display: table-cell;
+}

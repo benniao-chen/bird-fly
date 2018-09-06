@@ -1,0 +1,108 @@
+HTML
+    标签、标签属性
+    行内元素：      inline
+    　　span、b、i、sub、sup
+        (1)设置宽高无效
+　　　　 (2)对margin仅设置左右方向有效，上下无效；
+            padding设置上下左右都有效，即会撑大空间
+　　　　 (3)不会自动进行换行
+
+    块状元素：      block
+        div、p、nav、aside、header、footer、section、article、ul
+        (1)能够识别宽高 不推荐写固定高度
+        (2)margin和padding的上下左右均对其有效
+        (3)可以自动换行
+        (4)多个块状元素标签写在一起，默认排列方式为从上至下
+
+    行内块状元素：  inline-block
+        (1)不会自动进行换行
+        (2)能够识别宽高
+        (3)默认排列方式为从左到右
+
+盒模型：
+    box-sizing: boder-box;
+    使用该模型，且使用padding情况下，实际宽度与css width相同;
+    不适用该模型，使用padding情况下，实际宽度为 css width + css padding;
+
+CSS基础：
+    排版布局：
+        float:
+            脱离文档流（表现形式：父元素无高度），需要清除浮动，两种清除浮动方法
+                父元素：overflow: hidden;
+                伪元素：::after: {
+                    display: block;
+                    content: ' ';
+                    clear: both;
+                    visibility: hidden;
+                    height: 0;
+                }   ----------------项目中常用封装类名clearFix，可以全局搜索一下，看下自己项目中是否存在。
+        inline-block: 
+            元素间存在不可见的间隙，间隙产生是因为html元素间存在换行符。
+                解决办法： 父元素font-size：0; 缺点： 子元素需额外添加font-size属性
+                其他方法希望自己探索一下下~~~~
+        table: 
+            height: 100%; 火狐浏览器计算子元素高度有兼容性问题。
+        flex:
+            暂不讲述
+
+    position: 
+        relative： 相对定位
+        absolute： 绝对定位（向上级HTML元素遍历，找到最近的relative父元素，然后对该父元素进行定位）
+        fixed：    固定定位（相对于当前可视浏览器区域定位，用于做悬浮的html元素）
+        static:    静态定位（HTML元素默认定位，响应式开发中可用于覆盖其他三种定位）
+
+    z-index: 
+        1.按照Html顺序进行层次叠加（z-index默认值0）
+        2.根据z-index的值进行层次叠加
+        3.元素无定位无效，z-index与position属性需同时使用才生效
+        4.相同层次的HTML元素，z-index才有可比性
+
+    居中：
+        1.margin: 0 auto; 限制条件：无浮动，在页面设计中，该行只存在唯一区域，可用此方法定位。
+        2.利用postion属性(注意理解：left定位属性相对于父元素宽度、translateX定位属性相对于本身宽度)
+            .parent {
+                position: relative;
+            } 
+
+            .child {
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        3.display: table-cell  交给大家补充
+
+
+响应式：
+    HTML： 
+        meta标签
+    CSS：
+        用@media去配置屏幕尺寸限制
+        @media (min-width: ) and (max-width: ) { 
+            your css
+        }
+        @media (min-width: ) {
+            your css
+        }
+        @media (max-width: ) {
+            your css
+        }
+    BootStrap: 
+        12栅格布局系统，bootStrap小屏优先，如果要做三屏同样的排布方式，要用.col-xs-*类名配置（https://v3.bootcss.com/css/#grid）
+    字体单位：
+        rem 相对于根节点(html标签)font-size
+        em 相对于父元素font-size
+        px
+        补充： 
+            BootStrap设置根节点font-size: 10px; 
+            CPA的根节点html font-size: 16px; 
+                chrome的老版本只支持最小12px的字体大小，所以采用16px来做标准，并且写了sass函数 px2rem来计算px rem的转换。
+                新版的chrome已经支持10px大小的字体，bootStrap使用font-size：10px为标准。 ------个人理解，大家可补充。
+    
+    
+
+    开发需知：一定要问设计要三套设计图！！！！！
+    设计：设计在做小屏设计图，设计图尺寸是*2.

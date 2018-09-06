@@ -1,0 +1,60 @@
+前端架构： HTML/CSS/JS
+技术：HTML5/CSS3/ES2015/Node/TypeScript/ReactJs/VueJs
+打包：Webpack/gulp/grunt
+前端管理：npm 基于node
+代码管理：github(书籍：https://gitbook.tw/)
+
+
+页面渲染顺序： 最佳顺序css、html、js
+
+HTML5 语义化标签
+
+页面元素默认排列顺序从左至右、从上至下排列。
+写HTML页面要首先分析页面结构，分成大块，再进一步解析成小块进行编写。
+按照上下左右来分析，大模块内包含小模块。
+写任何前端代码都要注意代码缩进！！！！
+命名法： 驼峰式命名，
+
+HTML基础：
+    DOM元素（标签）：标签属性、标签特性
+        行内元素：      inline
+        　　span、b、i、sub、sup
+            (1)设置宽高无效
+　　　　     (2)对margin仅设置左右方向有效，上下无效；padding设置上下左右都有效，即会撑大空间
+　　　　     (3)不会自动进行换行
+        块状元素:       block
+            div、p、nav、aside、header、footer、section、article、ul-li、address 
+            (1)能够识别宽高
+　　　　　　 (2)margin和padding的上下左右均对其有效
+　　　　　　 (3)可以自动换行
+　　　　　　 (4)多个块状元素标签写在一起，默认排列方式为从上至下
+        行内块状元素:    inline-block
+            (1)不自动换行
+　　　　　　 (2)能够识别宽高
+　　　　　　 (3)默认排列方式为从左到右
+
+
+CSS基础：
+    排版布局：
+        float： 
+            脱离文档流，需要清除浮动
+        inline-block：
+            元素间存在不可见的间隙，解决办法：font-size: 0；mrgin负值
+        table-cell：
+            height: 100%; 火狐浏览器计算子元素高度有兼容性问题。
+        flex：
+            暂不讲述
+
+    position: relative、absolute、fixed
+
+    居中：
+        margin: 0 auto;
+        postion: relative + position: absolute + transform: translate
+        display: table-cell 
+
+    z-index: 元素无定位无效
+
+
+响应式：
+    字体单位：rem、em、px
+    BootStrap: 12栅格系统
