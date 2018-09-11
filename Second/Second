@@ -1,0 +1,97 @@
+推荐书籍： JavaScript权威指南(第六版)
+博客： 阮一峰
+Git书籍： 廖雪峰、https://gitbook.tw/
+
+
+JS：
+    默认执行顺序：
+        从上至下，按顺序执行，异步最后执行
+        异步： 单开线程，缺点：不可控，优点：不会阻塞主流程
+        异步对象： AJAX，setTimeout, setInterval
+
+    变量声明：
+        var、const、function
+        ES6: let
+
+    变量类型： 7大类型(JavaScript的变量是无类型变量，可赋值任意类型数据)
+        数字：  Number
+            特点：
+                不区分浮点型和整型，parseInt() 和 parseFloat()、 toFixed(number)
+            Math对象: 
+                在F12调试面板console.log(Math)，查看Math对象属性
+            加减乘除运算规则：
+                浮点型不精确 0.1 + 0.2 不一定等于 0.3, 一定要转化为整数进行运算
+        字符串： String
+            定义:
+                由单引号或者双引号括起来的字符序列。'12' 、"34"、'absc', 
+                嵌套式字符串需注意单引号区别, 可使用转义字符
+            转义字符： 
+                反斜线（\）
+            正则表达式：
+                定义： 
+                    new RegExp();
+                    /a/g;
+                常用方法：
+                    本身：/a/g.test() return true or false
+                    常与String对象方法结合起来使用，replace()
+            常问：
+                如何删除一个字符串中所有的a?
+        布尔:   Boolean
+            定义：
+                true、false
+            转换：
+                假值：flase == undefined、null、0、NaN、""
+                真值：true == other
+            运算符：
+                ||      或运算, 取前值，提供默认值
+                &&      和运算, 取后值，短路符
+                ===     全等，数据类型也得相同
+                ==      相等
+                !=      不等
+                !===    非全等
+
+        null:   
+            空值
+
+        undefined:
+            未定义
+            null == undefined  => true
+
+        对象：Object
+            形式： 
+                {key: [], key: {}, key: value, key: value, }
+            JSON:
+                JSON.stringify()
+                JSON.parse()
+
+        数组： Array
+            定义
+                数组是对象的特殊形式
+                [1, 2, 3]
+                index从0开始
+            方法：
+                join
+                sort
+                reverse
+                cocat
+                slice
+                map
+                filter
+
+    变量： 
+        声明：
+            var、const、function(ES6: let)
+            未声明变量，直接使用，默认为全局变量，严格模式下，会报错undefined。
+            声明提前：
+                var定义解析 
+                console.log(a); 
+                var a = 1 
+                => 
+                var a; 
+                console.log(a); undefined
+                a = 1;
+            作用域：
+            function {} 即为一个作用域 => 函数作用域
+            作用域变量分析, 嵌套结构的作用域分析 ---- 作用域链（理解闭包）
+        
+        

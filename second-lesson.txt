@@ -1,4 +1,138 @@
-JS基础：
-    变量作用域、数字计算、变量声明提升、this指向
+推荐书籍： JavaScript权威指南(第六版)
+博客： 阮一峰
+Git书籍： 廖雪峰、https://gitbook.tw/
 
-页面优化：打包压缩拆分资源文件、雪碧图等
+JS:
+    默认执行顺序：
+        从上至下，按顺序执行。
+        异步最后运行，一个异步即为一个线程，缺点不可控，优点是不会阻塞代码运行。
+        异步：AJAX、setTimeout、setInterval
+
+    变量声明： 
+        var、const、function
+        ES6: let
+    变量类型：    (JavaScript的变量是无类型变量，可赋值任意类型数据)
+        数字:   Number
+            范围: 
+                -2的53次方~~~~2的53次方
+            特点: 
+                不区分浮点型和整形，有方法可以转换数字类型，parseInt()取整形、parseFloat()取浮点型\
+            Math对象: 
+                在F12调试面板console.log(Math)，查看Math对象属性
+            加减乘除运算规则：
+                浮点型不精确 0.1 + 0.2 不一定等于 0.3, 一定要转化为整数进行运算
+        字符串: String
+            定义:
+                由单引号或者双引号括起来的字符序列。'12' 、"34"、'absc', 嵌套式字符串需注意单引号区别, 可使用转义字符
+            转义字符：
+                反斜线（\）
+            正则表达式：
+                定义： 
+                    new RegExp();
+                    /a/g;
+                常用方法：
+                    本身：/a/g.test() return true or false
+                    常与String对象方法结合起来使用，replace()
+            常问：
+                如何删除一个字符串中所有的a?
+        布尔:   Boolean
+            定义：
+                true、false
+            转换：
+                假值：flase == undefined、null、0、NaN、""
+                真值：true == other
+            运算符：
+                ||      或运算, 取前值，提供默认值
+                &&      和运算, 取后值，短路符
+                ===     全等，数据类型也得相同
+                ==      相等
+                !=      不等
+                !===    非全等
+        null:   
+            空值
+        undefined:
+            未定义
+            null == undefined  => true
+        对象:   Object
+            形式： 
+                {key: value}
+            原型 prototype:
+
+            JSON:
+                JSON.stringify()
+                JSON.parse()
+            日期对象： new Date()
+        数组:   Array
+            定义
+                数组是对象的特殊形式
+            方法：
+                join
+                sort
+                reverse
+                cocat
+                slice
+                map
+                filter
+
+    类型转换：
+        图
+        显式转换：
+            Number('3')
+        隐式转换：
+            ==、!!、、、 转换boolean值
+            -  字符串转为数字
+            +  数字转为字符串 (toString()), null 转为0
+
+    
+    变量： 
+        声明：
+            var、const、function(ES6: let)
+            未声明变量，直接使用，默认为全局变量，严格模式下，会报错undefined。
+            声明提前：
+                var定义解析 
+                console.log(a); var a = 1 => var a; console.log(a); a = 1;
+        作用域：
+            function {} 即为一个作用域 => 函数作用域
+            作用域变量分析, 嵌套结构的作用域分析 ---- 作用域链（理解闭包）
+            
+
+    常用的运算符： 
+        +, -, *, /(不是整除，带小数), %, !, ++, --, -=, += （++ -- 前后不一样，避免使用，容易出现问题，前增量后增量）
+        唯一的三元运算符: ? :
+
+    语句：
+        if() {} else {}
+        if() {} else if() {}
+        switch(n){ case "": do; break; defaule: ;}
+        for() {}
+        array for(var i = 0; i < array.length; i ++) {}
+        object for(var i in object) {}
+        return  && break
+
+        throw new Error('')
+        try{}catch(e){}
+        前端语法比较简单，主要是函数式思想，也是模块化思想
+
+
+    函数:
+        jquery的链式调用
+        立即执行函数
+        闭包
+        原型、继承、构造函数
+        var p = F.prototype;
+        var c = p.constructor;
+        c === F => true
+
+
+    客户端js:
+        理解客户端Js的运行顺序，即默认生命周期。
+        操作dom元素、修改css属性
+        HTML默认事件：
+            click、mouseover、mouseout、focus、
+
+
+    浅拷贝，深拷贝
+    JSON方法的妙用
+
+
+    鸭式辩型： 像鸭子一样走路、游泳并且嘎嘎叫的鸟就是鸭子.
