@@ -94,6 +94,16 @@ JS:
         作用域：
             function {} 即为一个作用域 => 函数作用域
             作用域变量分析, 嵌套结构的作用域分析 ---- 作用域链（理解闭包）
+            JS事件冒泡： HTML展现
+        闭包：
+            特性：
+                可捕捉到局部变量和参数，并一直保存下来
+            为何会产生问题：
+                1.JS的垃圾回收机制，无用变量自动回收
+                2.作用域链，变量查找方式
+                基于这两条规则，函数调用外部变量，当外部变量产生变化时，函数运算结果出现问题。
+            如何利用闭包去解决问题：
+                让变量成为函数参数
             
 
     常用的运算符： 
@@ -116,23 +126,52 @@ JS:
 
     函数:
         jquery的链式调用
-        立即执行函数
+        立即执行函数：
+            (function(){
+
+            })()
         闭包
-        原型、继承、构造函数
+        构造函数：
+        原型：
+        继承: https://www.cnblogs.com/humin/p/4556820.html
         var p = F.prototype;
         var c = p.constructor;
         c === F => true
 
+    JS变量特性：
+        对象：浅拷贝，深拷贝
+            
+            JSON方法的妙用
+
 
     客户端js:
-        理解客户端Js的运行顺序，即默认生命周期。
-        操作dom元素、修改css属性
-        HTML默认事件：
-            click、mouseover、mouseout、focus、
+        框架生命周期：HTML DOM渲染 + JS运行顺序
+            window.onload = function() {}
+                网页所有资源都加载完成，才运行，只能写一个
+            $('document').ready(function(){})
+                网页DOM结构加载完成，即运行，可写多个
+        功能：(结合jQuery)
+            查找DOM元素，查看其DOM对象属性：
 
+            操作dom元素，修改css属性：
 
-    浅拷贝，深拷贝
-    JSON方法的妙用
+            在处理DOM元素，修改css属性的时候，处理一些必要的逻辑:
+                
+            绑定DOM事件：
+                click、mouseover、mouseout、focus、
+
+    动画：
+        css3动画： 
+            animation:
+            transition:
+            "transition":"opacity .4s ease,transform .4s ease"
+
+            通过添加类名，移除类名实现。
+            特点：
+                动画效果不可控
+        js动画：
+            滚动到顶端
+
 
 
     鸭式辩型： 像鸭子一样走路、游泳并且嘎嘎叫的鸟就是鸭子.

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+    color: #fff;
+}
+
+body {
+    background-color: blue;
+    width: 80%;
+    height: 130px;
+    margin: 10px auto 0;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+header {
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+main {
+    overflow: hidden;
+}
+
+main>div {
+    width: 50%;
+    height: 60px;
+    float: left;
+    background: green;
+    border: 3px solid fuchsia;
+    margin-bottom: 5px;
+}
+
+main>div div {
+    border: 1px solid #4c4c4c;
+}
+
+footer {
+    background-color: aqua;
+}
+
+img {
+    width: 50px;
+}
+
+.show-by-opacity{
+    opacity: 1;
+    -webkit-animation: .4s fadeIn;
+    -moz-animation: .4s fadeIn;
+    -o-animation: .4s fadeIn;
+    animation: .4s fadeIn;
+}
+.hide-by-opacity{
+    opacity: 0;
+    -webkit-animation: .4s fadeOut;
+    -moz-animation: .4s fadeOut;
+    -o-animation: .4s fadeOut;
+    animation: .4s fadeOut;
+}
+@-webkit-keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+@keyframes fadeIn{
+    from{opacity:0}
+    to{opacity:1}
+}
+@-webkit-keyframes fadeOut{
+    from{opacity:1}
+    to{opacity:0}
+}
+@keyframes fadeOut{
+    from{opacity:1}
+    to{opacity:0}
+}
