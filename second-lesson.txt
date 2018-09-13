@@ -132,7 +132,15 @@ JS:
             })()
         闭包
         构造函数：
+            function Person() {
+                
+            }
         原型：
+            prototype
+        原型链：
+            personA.prototype => Person.prototype => Object.prototype => null
+                _proto_               _proto_            _proto_
+
         继承: https://www.cnblogs.com/humin/p/4556820.html
         var p = F.prototype;
         var c = p.constructor;
@@ -151,9 +159,7 @@ JS:
             $('document').ready(function(){})
                 网页DOM结构加载完成，即运行，可写多个
         功能：(结合jQuery)
-            查找DOM元素，查看其DOM对象属性：
-
-            操作dom元素，修改css属性：
+            查找DOM元素，查看其DOM对象属性，操作dom元素，修改dom属性，修改css属性：
 
             在处理DOM元素，修改css属性的时候，处理一些必要的逻辑:
                 
@@ -164,7 +170,6 @@ JS:
         css3动画： 
             animation:
             transition:
-            "transition":"opacity .4s ease,transform .4s ease"
 
             通过添加类名，移除类名实现。
             特点：

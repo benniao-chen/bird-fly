@@ -66,17 +66,17 @@ JSON.stringify();
 // funcs[5]();
 
 
-$(document).ready(function() {
-    console.log('document.reday');
-    console.log($('img').height());
-})
+// $(document).ready(function() {
+//     console.log('document.reday');
+//     console.log($('img').height());
+// })
 
-window.onload = function() {
-    console.log("load");
-    console.log($('img').height());
-};
+// window.onload = function() {
+//     console.log("load");
+//     console.log($('img').height());
+// };
 
-console.log('S.js ready', $('img'));
+// console.log('S.js ready', $('img'));
 
 
 

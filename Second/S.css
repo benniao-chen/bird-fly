@@ -27,7 +27,7 @@ main {
 }
 
 main>div {
-    width: 50%;
+    width: 30%;
     height: 60px;
     float: left;
     background: green;
@@ -49,31 +49,32 @@ img {
 
 .show-by-opacity{
     opacity: 1;
-    -webkit-animation: .4s fadeIn;
-    -moz-animation: .4s fadeIn;
-    -o-animation: .4s fadeIn;
-    animation: .4s fadeIn;
+    -webkit-animation: 1s fadeIn;
+    -moz-animation: 1s fadeIn;
+    -o-animation: 1s fadeIn;
+    animation: 1s fadeIn;
 }
-.hide-by-opacity{
-    opacity: 0;
-    -webkit-animation: .4s fadeOut;
-    -moz-animation: .4s fadeOut;
-    -o-animation: .4s fadeOut;
-    animation: .4s fadeOut;
-}
-@-webkit-keyframes fadeIn{
-    from{opacity:0}
-    to{opacity:1}
+/* @-webkit-keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1; }
 }
 @keyframes fadeIn{
-    from{opacity:0}
-    to{opacity:1}
+    from{opacity:0;}
+    to{opacity:1;}
+} */
+
+@keyframes fadeIn{
+    0% {opacity:0;}
+    50% {opacity:1; width: 30%;}
+    100% {opacity:1; width: 60% ;}
 }
-@-webkit-keyframes fadeOut{
-    from{opacity:1}
-    to{opacity:0}
+
+/* .show-by-opacity-transition {
+    opacity: 0.5;
+    width: 50%;
+    transition: opacity .4s ease, width .4s ease;
 }
-@keyframes fadeOut{
-    from{opacity:1}
-    to{opacity:0}
-}
+.show-by-opacity-transition:hover {
+    opacity: 1;
+    width: 70%;
+} */

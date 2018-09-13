@@ -2,6 +2,8 @@
 博客： 阮一峰
 Git书籍： 廖雪峰、https://gitbook.tw/
 
+Lihui.chen
+
 
 JS：
     默认执行顺序：
@@ -102,5 +104,86 @@ JS：
             作用域：
             function {} 即为一个作用域 => 函数作用域
             作用域变量分析, 嵌套结构的作用域分析 ---- 作用域链（理解闭包）
-        
+            HTML的事件冒泡
+        闭包：
+            特性：
+                可捕捉到局部变量和函数作用域的参数，
+                并一直保存下来
+            为何会产生问题：
+                1.JS垃圾回收机制，无用变量自动回收
+                2.作用域链，变量查找方式
+            如何解决:
+                让变量成为函数参数
+
+    常用的运算符：
+        + - * / % 
+        唯一的三元运算符
+        条件？符合条件 ：不符合条件运行
+        if(条件) {
+
+        } else {
+
+        }
+    
+    语句：
+        if() else{}
+        if() else if(){}
+        switch(n) {case '': doyourfunction;break; default: dodefault}
+        for() {}
+        []
+        for(var i = 0; i < Array.length; i ++){
+            index = i;
+            Array[i]
+        }
+        for(item of Array){
+            item 
+        }
+        {key: value}
+        for(key in Object) {
+            Object[key]
+        }
+
+        return && break
+
+        throw new Error('')
+        try{
+
+        }catch(e){
+            console.log(e)
+        }
+
+        函数式思想，也可以模块化思想
+
+
+
+    立即执行：
+        (function() {
+
+        })()
+
+    客户端JS：
+        框架生命周期：
+            window.onload = function() {
+
+            }
+            所有HTML元素+图片及其他引用文件
+                加载完
+            $('document').ready(function() {
+
+            })
+            DOM加载完
+        功能：（jquery）
+            查找DOM元素，查看标签属性，CSS属性
+            操作DOM, 修改。
+            JS逻辑
+            DOM事件：
+
+    动画:
+        CSS3:
+            animation: 
+            transition:
+        JS:
+            animation
+
+
         
