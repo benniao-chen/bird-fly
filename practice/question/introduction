@@ -1,0 +1,18 @@
+根据structure.png完成开发
+1. 要求使用bootstrap布局模式进行开发，大（lg）中(md)小(xs)屏尺寸以bootstrap官网默认为准。
+2. 完成图示结构，空白模块可自由填充背景色。大屏如图，中小屏空白区域隐藏且module1/2/3占宽100%。
+3. module1/module2/module3为相同模块，见图module.png，
+    Ⅰ、根据module.png转化为JSON数据格式，需最少三组数据，写入module.json文件中。
+    Ⅱ、根据module.json进行动态渲染DOM结构。（可将json数据赋值于js变量，进行动态渲染，也可用ajax get json，进行动态渲染）
+    Ⅲ、大屏三列，中屏两列，小屏一列。
+    Ⅳ、每行等高。
+    Ⅴ、检验，可接受不同的json数据进行动态渲染。
+4. Loading效果任选两种，或者自己可以找到更酷炫的，用css3完成。
+5. 配合半透明遮盖层（遮盖层为全屏），制作整体Loading效果（loading效果需在任意情况下居中于当前可视区域）。
+6. js功能，两个按钮，按钮浮于遮盖层上方。
+   Ⅰ、第一个按钮，开关loading效果。
+   Ⅱ、第两个按钮，切换Loading效果。
+
+
+根据完成度，来定奖励~~
+
