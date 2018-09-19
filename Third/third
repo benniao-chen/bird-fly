@@ -1,0 +1,96 @@
+Js变量特性：
+    对象类型是引用类型
+    Array/JSON/Object
+
+    浅拷贝：
+        引用，可以理解为指针指向
+    深拷贝：
+        简单的Object对象（JSON），JSON.stringify(), JSON.parse()
+        复杂的对象，带function的
+                                var c = object.assign({}， {a:1})
+                                angular.extend()
+
+npm:
+    前端包管理，基于node技术，所有的包都放在node_module文件夹中.
+    安装npm：
+        node官网安装node
+        node -v npm -v
+    初始化：
+        npm init
+    安装相应组件：
+        npm install --save
+                    --save-dev
+    lodash
+
+angular:  
+    学习网站：
+        https://www.angular.cn/docs
+        https://segmentfault.com/a/1190000008754631
+    AngularCLI:
+        npm install -g @angular/cli
+    新建项目：
+        ng new my-angular-projectng 
+        ng generate component my-comp - 生成一个新组件，同时生成其测试规格和相应的HTML/CSS文件
+        ng generate directive my-directive - 生成一个新指令
+        ng generate pipe my-pipe - 生成一个新管道
+        ng generate service my-service - 生成一个新服务
+        ng generate route my-route - 生成一个新路由
+        ng generate class my-class - 生成一个简易的模型类
+    配置文件介绍：
+        package.json: 
+        tsconfig.json:
+            用来配置解析ts文件
+            https://www.tslang.cn/docs/handbook/tsconfig-json.html
+
+            脱离了angular项目框架如何单独使用typescript?
+    
+    angular.json:
+        angular项目的配置文件。
+
+    zone.js ==> ngZone 检测js变量变化，刷新DOM，实现双向绑定
+        setInterval、clearInterval、setTimeout、clearTimeout
+        alert、prompt、confirm
+        requestAnimationFrame、cancelAnimationFrame
+        addEventListener、removeEventListener
+        内部是通过它来跟踪异步任务，然后执行变化检测任务就可以了
+    rxjs ==> js事件流
+            EventEmitter
+            Subject
+            Subscription
+            BehaviorSubject
+    lifeCycle: 
+        constructor
+
+        ngOnChanges
+        ngOnInit
+        ngDoCheck
+            ngAfterContentInit
+            ngAfterContentChecked
+            ngAfterViewInit
+            ngAfterViewChecked
+        ngOnDestroy
+
+        Error:
+        ExpressionChangedAfterItHasBeenCheckedError: 
+        Expression has changed after it was checked. 
+        Previous value: 'false'. Current value: 'true'. 
+module:
+            declarations: 本Module的component
+            imports：     导入其余Module
+            providers：   本module所包含的service服务
+            bootstrap：   启动模块
+        route:
+            路由管理
+            lazyload
+        component:  (标签)
+        directive:  (标签属性)
+        pipe：      (过滤器)
+        service:    (服务)
+        route:      (路由)
+        class:      (功能类)
+
+            
+
+
+    
+

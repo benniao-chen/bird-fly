@@ -1,0 +1,27 @@
+1.遵循模块开发，利用路由开发，可使用路由的lazyload功能。
+
+2.命名方式：
+    目录文件: auto-focus.*.*
+        module: auto-focus.module.ts
+        route: auto-focus.route.ts
+        component: auto-focus.component.*
+        directive: auto-focus.directive.*
+        service: auto-focus.service.*
+        pipe: auto-focus.pipe.*
+
+    js变量: 
+        驼峰式命名法:
+            变量： autoFocus 小驼峰
+            类名： AutoFocus 大驼峰
+
+3.用swagger文件生成标准化model文件，需严格遵守使用。
+
+4.严格遵守Angular Lifecycle, 尽量不要使用setTimeout、setInterval。
+
+5.自建rxjs对象(Subject, EventEmitter, BehaviorSubject等等)，一定要在OnDestroy函数中销毁。
+
+6.严格遵守代码缩进
+
+7.
+
+        

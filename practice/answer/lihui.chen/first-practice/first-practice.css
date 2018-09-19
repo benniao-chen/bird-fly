@@ -1,0 +1,120 @@
+.loading-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    -webkit-animation: 4s circle infinite;
+    -moz-animation: 4s circle infinite;
+    -o-animation: 4s circle infinite;
+    animation: 4s circle infinite;
+}
+
+.loading-animation-2 {
+    -webkit-animation: 4s circle1 infinite;
+    -moz-animation: 4s circle1 infinite;
+    -o-animation: 4s circle1 infinite;
+    animation: 4s circle1 infinite;
+}
+
+.loading-animation-3 {
+    -webkit-animation: 4s circle2 infinite;
+    -moz-animation: 4s circle2 infinite;
+    -o-animation: 4s circle2 infinite;
+    animation: 4s circle2 infinite;
+}
+
+.loading-animation-4 {
+    -webkit-animation: 4s circle3 infinite;
+    -moz-animation: 4s circle3 infinite;
+    -o-animation: 4s circle3 infinite;
+    animation: 4s circle3 infinite;
+}
+
+.loading-animation>div {
+    background-color: #98FFED;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.loading-animation>.ball-2 {
+    width: 80px;
+    height: 80px;
+}
+
+.loading-animation>.ball-3 {
+    width: 60px;
+    height: 60px;
+}
+
+.loading-animation>.ball-4 {
+    width: 40px;
+    height: 40px;
+}
+
+@-webkit-keyframes circle{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    60%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+@keyframes circle{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    60%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@-webkit-keyframes circle1{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    2%{transform: translate(-50%, -50%) rotate(0deg);}
+    65%{transform: translate(-50%, -50%) rotate(360deg); }
+    100%{transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes circle1{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    2%{transform: translate(-50%, -50%) rotate(0deg);}
+    65%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@-webkit-keyframes circle2{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    4%{transform: translate(-50%, -50%) rotate(0deg);}
+    80%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+@keyframes circle2{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    4%{transform: translate(-50%, -50%) rotate(0deg);}
+    80%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@-webkit-keyframes circle3{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    6%{transform: translate(-50%, -50%) rotate(0deg);}
+    90%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+@keyframes circle3{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    6%{transform: translate(-50%, -50%) rotate(0deg);}
+    90%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg); }
+}
+

@@ -1,0 +1,268 @@
+@media (max-width: 768px) {
+    body {
+        background: red;
+    }
+
+    li {
+        width: 100%
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background: blue;
+    }
+
+    li {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: white;
+    }
+
+    li {
+        width: 30%
+    }
+}
+
+body {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    width: 100%
+}
+
+li {
+    display: inline-block;
+}
+
+.button1 {
+    color: blue;
+    z-index: 2;
+}
+
+.button2 {
+    background-color: yellow;
+    margin-left: 20px;
+}
+
+.module1 {
+    background-color: green;
+}
+
+.module2 {
+    background-color: red;
+}
+
+.module3 {
+    background-color: yellow;
+}
+
+.button-container {
+    position: relative;
+    z-index: 2;
+}
+
+.cover {
+    display: none;
+    background-color: white;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.loading1 {
+    display: none;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loading1 span {
+    display: inline-block;
+    width: 8px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: pink;
+    animation: 1s loading1-animation infinite;
+    -webkit-animation: 1s loading1-animation infinite;
+}
+
+.loading1 span:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+}
+
+.loading1 span:nth-child(3) {
+    -webkit-animation-delay: 0.4s;
+}
+
+.loading1 span:nth-child(4) {
+    -webkit-animation-delay: 0.6s;
+}
+
+.loading1 span:nth-child(5) {
+    -webkit-animation-delay: 0.8s;
+}
+
+@keyframes loading1-animation {
+    0% {
+        -webkit-transform: scaleY(1);
+    }
+    50% {
+        -webkit-transform: scaleY(2);
+        background-color: red;
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+    }
+}
+
+.loading2 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.sk-circle span {
+    width: 8px;
+    height: 40px;
+    background-color: red;
+    display: inline-block;
+    animation: 2s loading2-animation infinite;
+    -webkit-animation: 2s loading2-animation infinite;
+}
+
+.sk-circle2 {
+    transform: rotate(30deg);
+}
+
+.sk-circle2 span {
+    -webkit-animation-delay: 0.2s;
+}
+
+.sk-circle3 {
+    transform: rotate(60deg);
+}
+
+.sk-circle3 span {
+    -webkit-animation-delay: 0.4s;
+}
+
+.sk-circle4 {
+    transform: rotate(90deg);
+}
+
+.sk-circle4 span {
+    -webkit-animation-delay: 0.6s;
+}
+
+.sk-circle5 {
+    transform: rotate(120deg);
+}
+
+.sk-circle5 span {
+    -webkit-animation-delay: 0.8s;
+}
+
+.sk-circle6 {
+    transform: rotate(150deg);
+}
+
+.sk-circle6 span {
+    -webkit-animation-delay: 1s;
+}
+
+.sk-circle7 {
+    transform: rotate(180deg);
+}
+
+.sk-circle7 span {
+    -webkit-animation-delay: 1.2s;
+}
+
+.sk-circle8 {
+    transform: rotate(210deg);
+}
+
+.sk-circle8 span {
+    -webkit-animation-delay: 1.4s;
+}
+
+.sk-circle9 {
+    transform: rotate(240deg);
+}
+
+.sk-circle9 span {
+    -webkit-animation-delay: 1.4s;
+}
+
+.sk-circle10 {
+    transform: rotate(270deg);
+}
+
+.sk-circle10 span {
+    -webkit-animation-delay: 1.6s;
+}
+
+.sk-circle11 {
+    transform: rotate(300deg);
+}
+
+.sk-circle11 span {
+    -webkit-animation-delay: 1.8s;
+}
+
+.sk-circle12 {
+    transform: rotate(330deg);
+}
+
+.sk-circle12 span {
+    -webkit-animation-delay: 2s;
+}
+
+@keyframes loading2-animation {
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
