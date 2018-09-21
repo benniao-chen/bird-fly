@@ -1,0 +1,55 @@
+自学需要：
+1. 克服对新知识的陌生感。
+2. 动手实践起来，只有实践，才能加深认知。
+3. 重点掌握如何去解决问题
+
+我比较喜欢相似学习法
+普通开发： 
+    HTML：官网定义的标签、属性
+    JS(jquery)：
+        元素选择器$(''), 
+        类名函数addClass(), 
+        css()函数修改css， 
+        事件click(function(){})，
+        文档处理append() appendTo() html()
+    CSS/SCSS： 
+
+Angular:  
+    HTML：
+        可自定义标签、属性，如何去定义标签（Component）？如何定义属性(Directive)？
+    TS(angular): 
+        元素选择器<div #abc></div>,ts: abc: ViewChild; this.abc 或者用directive指令
+        class函数： <div [class]="abc"></div> abc可以是变量 可以是函数 可以是一个判断语句
+        css函数： <div [style]="abc"></div> 
+        事件： <div (click)=""></div>
+        文档处理： {{abc}}
+    CSS/SCSS:
+        多了一个封装模式
+
+以点入面，认真研读一个component的实现，基本都是类似的
+
+实践：
+    学了npm包管理，项目里没有用，就用
+    用了之后，你会发现，项目发布production怎么办？ 
+    需要用webpack，再去学再去用。
+    已经有了webpack，但是好像打包不到node_module里得文件，去webpack官网查API理解如何配置？促进学习。
+
+    要把学到的新知识用起来！！！
+
+
+问题分类：
+    console.log面板报错，最简单的错。根据报错内容去解决就OK了。
+    逻辑错误，要正确理解代码的运行顺序，框架的生命周期，以及各种文件之间的关联。多打几个断点，多写几个console.log
+    不会做，知识匮乏：
+        明确问题是什么再去查。
+        如何去查找到自己想要知道的知识?
+            官网api说明/全局搜索/各种论坛的技术分享文/百度/谷歌
+
+
+未报错情况下如何差错？
+    从HTML查起，查DOM元素是否渲染（存在），未渲染是为什么?
+        DOM元素渲染后，为什么还是看不到？
+            查CSS，是否css属性未生效，被覆盖还是其他情况？
+                如果以上都无问题，请查JS。
+
+

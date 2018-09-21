@@ -1,0 +1,27 @@
+angular: 
+    TypeScript
+    Npm
+    Webpack
+
+文件目录按module分开
+公用的组件服务用shareModule
+shareModule：
+    多语言服务
+    dialog:
+        alert
+        confirm
+    http：
+        loading效果
+        error handle
+otherModule: 
+    non-login
+    login:
+        header
+        menu
+        main
+
+        footer
+
+配置文件：
+    environment
+        service的后台api封装成变量
